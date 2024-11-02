@@ -3,6 +3,9 @@ package Controller;
 import Model.Classes.*;
 import Model.Enumeration.*;
 import Model.Classes.Bisnis;
+
+import java.util.List;
+
 import Model.*;
 
 public class Controller {
@@ -49,4 +52,12 @@ public class Controller {
         return harga;
     }
 
+    public double totalBeberapaTiket(List<Tiket> listTiket) {
+        int total = 0;
+
+        for (int i = 0; i < listTiket.size(); i++) {
+            total += listTiket.get(i).getHarga();
+        }
+        return total;
+    }
 }

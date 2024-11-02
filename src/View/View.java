@@ -55,8 +55,13 @@ public class View {
             int byk = scn.nextInt();
 
             for (int i = 0; i < byk; i++) {
+                System.out.println("Makanan " + (i+1));
+                int index = scn.nextInt();
 
+                listPesan.add()
             }
         }
+        
     }
+
 }
