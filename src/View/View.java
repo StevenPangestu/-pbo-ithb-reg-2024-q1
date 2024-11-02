@@ -64,4 +64,18 @@ public class View {
         
     }
 
+    public void HitungTotalBeberapaTiket() {
+        List<Tiket> hitung = new ArrayList<>();
+
+        System.out.println("Banyak tiket : ");
+        int byk = scn.nextInt();
+
+        for (int i = 0; i < byk; i++) {
+            System.out.println("pilih tiket ke " + (1 + i));
+            int pilih = scn.nextInt();
+            hitung.add(hitung.get(pilih));
+        }
+        System.out.println(Controller.totalBeberapaTiket(hitung));
+    }
+
 }
